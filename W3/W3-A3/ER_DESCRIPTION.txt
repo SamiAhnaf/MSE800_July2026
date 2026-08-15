@@ -1,18 +1,18 @@
 1. Additional Attributes:
  I would add the following attributes:
- i. Student: Email – to store the student's email address.
- ii. Student: Phone_number – to store the student's contact number.
- iii. Enrollment: Enrollment_status – to show whether the enrollment is active, completed, or cancelled.
+ i. Student: Email; to store the student's email address.
+ ii. Student: Phone_number; to store the student's contact number.
+ iii. Enrollment: Enrollment_status; to show whether the enrollment is 'active', 'completed', or 'cancelled'.
 
 2. Relationships Between Entities:
  
  i. Student – Enrollment:
  The relationship is Enrolls. A student can have many enrollments, because they can enroll in multiple courses. Each enrollment belongs to a student. Therefore, this can be considered a one-to-many (1) relationship from Student to Enrollment.
- ii. Enrollment – Lecture
+ ii. Enrollment – Lecture:
  An enrollment is associated with the lectures related to the course or subject. A lecture can be attended by multiple enrolled students, while a student can attend multiple lectures. Therefore, this can be considered a many-to-many (M) relationship.
- iii. Lecturer – Lecture
+ iii. Lecturer – Lecture:
  A lecturer can conduct many lectures, while each lecture is normally conducted by a lecturer. Therefore, this is a one-to-many (1) relationship from Lecturer to Lecture.
- iv. Subjects – Lecture
+ iv. Subjects – Lecture:
  A subject can have many lectures, while each lecture belongs to a particular subject. Therefore, this is a one-to-many (1) relationship from Subjects to Lecture.
- v. Lecturer – Subjects
+ v. Lecturer – Subjects:
  The Lectures relationship connects lecturers and subjects. A lecturer can teach multiple subjects, and a subject can be taught by multiple lecturers. Therefore, this can be considered a many-to-many (M) relationship, with Lecture acting as the connection between them.
