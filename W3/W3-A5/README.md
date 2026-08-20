@@ -25,3 +25,33 @@ The system needs to know how much one currency is worth compared to another curr
 The Exchange_Transaction table stores the actual currency exchanges made by customers. It records the customer, exchange rate, amount, converted amount, transaction date, and transaction type.
 
 This table keeps a record of every currency exchange made by a customer.
+
+**OUTPUT SHOULD SHOW**
+Tables created successfully.
+Customers inserted successfully.
+Currencies inserted successfully.
+Exchange rates inserted successfully.
+Transactions inserted successfully.
+
+--- CUSTOMERS ---
+(1, 'Sami', 'Ahnaf', 'sami@example.com')
+(2, 'Bleh', 'Rahman', 'bleh@example.com')
+(3, 'Dark', 'Bright', 'dark@example.com')
+(4, 'Who', 'Who', 'who@example.com')
+(5, 'Gg', 'Wilson', 'gg@example.com')
+
+--- CURRENCIES ---
+('NZD', 'New Zealand Dollar', '$')
+('USD', 'United States Dollar', '$')
+('AUD', 'Australian Dollar', '$')
+('GBP', 'British Pound', '£')
+('EUR', 'Euro', '€')
+
+--- EXCHANGE TRANSACTIONS ---
+(1, 'Sami Ahnaf', 'NZD', 'USD', 1000.0, 590.0, 'Buy', '2026-08-20 10:00')
+(2, 'Bleh Rahman', 'USD', 'NZD', 500.0, 845.0, 'Sell', '2026-08-20 10:30')
+(3, 'Dark Bright', 'NZD', 'AUD', 800.0, 728.0, 'Buy', '2026-08-20 11:00')
+(4, 'Who Who', 'NZD', 'GBP', 1000.0, 450.0, 'Buy', '2026-08-20 11:30')
+(5, 'Gg Wilson', 'NZD', 'EUR', 600.0, 324.0, 'Sell', '2026-08-20 12:00')
+
+Database connection closed.
